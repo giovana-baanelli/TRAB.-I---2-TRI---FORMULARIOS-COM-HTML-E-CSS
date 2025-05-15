@@ -1,20 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, intial-sacle=1.0">
-<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Casais - Tabelionato de Notas</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>6º Tabelionato de Notas</h1>
-        <p>Tabelião João Teodoro da Silva.</p>
+        <h1>Cadastro de Casais</h1>
+        <p>Por favor, preencha os dados abaixo para emitir a certidão de casamento.</p>
     </header>
 
-<main>
-    <input type="checkbox"
-</main>
-<footer>
+    <form id="cadastro-form">
+        <section>
+            <h2>Informações do Casal</h2>
 
-</footer>
+            <label for="nome-noivo">Nome do Noivo</label>
+            <input type="text" id="nome-noivo" name="nome-noivo" placeholder="Digite o nome completo" required>
+
+            <label for="cpf-noivo">CPF do Noivo</label>
+            <input type="text" id="cpf-noivo" name="cpf-noivo" placeholder="Digite o CPF" required>
+
+            <label for="nome-noiva">Nome da Noiva</label>
+            <input type="text" id="nome-noiva" name="nome-noiva" placeholder="Digite o nome completo" required>
+
+            <label for="cpf-noiva">CPF da Noiva</label>
+            <input type="text" id="cpf-noiva" name="cpf-noiva" placeholder="Digite o CPF" required>
+
+            <label for="data-casamento">Data do Casamento</label>
+            <input type="date" id="data-casamento" name="data-casamento" required>
+        </section>
+
+        <section>
+            <h2>Endereço</h2>
+
+            <label for="endereco">Endereço Completo</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Rua, Número, Bairro, Cidade, Estado" required>
+
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" name="cep" placeholder="Digite o CEP" required>
+        </section>
+
+        <button type="submit">Enviar Dados</button>
+    </form>
+
+    <footer>
+        <p>6º Tabelionato de Notas de Belo Horizonte - Tabelião João Teodoro da Silva</p>
+    </footer>
 </body>
+</html>
