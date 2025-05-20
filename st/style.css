@@ -4,7 +4,7 @@ body {
   background-color: #f4f4f9;
 }
 
-h2, h3, h4 {
+h2, h3 {
   color: #333;
 }
 
@@ -27,7 +27,8 @@ label {
   font-weight: bold;
 }
 
-input,
+input[type="text"],
+input[type="email"],
 select {
   width: 100%;
   padding: 8px;
